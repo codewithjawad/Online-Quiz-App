@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CandidateMaster.master.cs" Inherits="OlineQuizApp.Views.Candidate.CandidateMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Candidate</title>
+        <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Assests/Lib/Bootstrap/css/bootstrap.min.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="CandidateHome.aspx">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="Game.aspx">Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton  ID="LogoutBtn" runat="server"  CssClass="nav-link text-light" OnClick="LogoutBtn_Click">Logout</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
