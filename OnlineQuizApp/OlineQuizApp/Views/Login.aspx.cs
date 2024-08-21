@@ -21,7 +21,7 @@ namespace OlineQuizApp.Views
 
         private bool VerifyReCaptcha(string response)
         {
-            string secretKey = "6LfUhfQpAAAAAJiMdnPgy2iAb8JYuZXxPAzI326x";
+            string secretKey = "Your secret key";
             var client = new WebClient();
             var reply = client.DownloadString(
                 $"https://www.google.com/recaptcha/api/siteverify?secret={secretKey}&response={response}");
