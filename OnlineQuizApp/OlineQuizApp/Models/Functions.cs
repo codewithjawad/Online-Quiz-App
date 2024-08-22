@@ -17,7 +17,7 @@ namespace OlineQuizApp.Models
         public  string ConStr;
         private SqlDataAdapter _adapter;
         public Functions() {
-            ConStr = @"Data Source=JAWWAD-PC\SQLEXPRESS;Initial Catalog=onlinequiz;Integrated Security=True;TrustServerCertificate=False";
+            ConStr = @"Your connection string";
             con = new SqlConnection(ConStr);
             _command = new SqlCommand
             {

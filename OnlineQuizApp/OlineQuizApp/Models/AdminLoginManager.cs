@@ -14,7 +14,7 @@ namespace OlineQuizApp.Models
         // Private constructor to prevent instantiation from outside
         private AdminLoginManager()
         {
-            ConnectionString = @"Data Source=JAWWAD-PC\SQLEXPRESS;Initial Catalog=onlinequiz;Integrated Security=True;TrustServerCertificate=False";
+            ConnectionString = @"Your connection string";
         }
 
         // Public method to provide a global point of access to the instance
