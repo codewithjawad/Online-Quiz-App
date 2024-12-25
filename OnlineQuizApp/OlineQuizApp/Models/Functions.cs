@@ -17,7 +17,7 @@ namespace OlineQuizApp.Models
         public  string ConStr;
         private SqlDataAdapter _adapter;
         public Functions() {
-            ConStr = @"Your connection string";
+            ConStr = @"Your connection string here";
             con = new SqlConnection(ConStr);
             _command = new SqlCommand
             {
